@@ -508,6 +508,10 @@ msgctxt "#31225"
 msgid "Info List"
 msgstr ""
 
+msgctxt "#131225"
+msgid "Info List (Inv.)"
+msgstr ""
+
 msgctxt "#31226"
 msgid "Show title"
 msgstr ""
@@ -574,6 +578,10 @@ msgstr ""
 
 msgctxt "#31242"
 msgid "Media Info"
+msgstr ""
+
+msgctxt "#131242"
+msgid "Media Info (Inv.)"
 msgstr ""
 
 msgctxt "#31243"

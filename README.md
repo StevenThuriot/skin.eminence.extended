@@ -15,3 +15,8 @@ Weather font icons from meteocons
 * Extra views
 	* Inverse Info List
 	* Inverse Media Info
+* Extra colors
+	* Rose
+	* Steel
+	* Intense Orange
+	* Ghost

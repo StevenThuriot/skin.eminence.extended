@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<colors>
+    <!-- Highlight Colors -->
+    <color name="Highlight">ffDB4B2E</color>
+    <color name="PosterHighlight">dfDB4B2E</color>
+    
+    <!-- Keyboard -->
+    <color name="Keyboard">ffDB4B2E</color>
+</colors>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<colors>
+        <!-- Highlight Colors -->
+    <color name="Highlight">ffF8F8FF</color>
+    <color name="PosterHighlight">dfF8F8FF</color>
+        <!-- Keyboard -->
+    <color name="Keyboard">ff4A4A4A</color>
+        <!-- Main Colors -->
+    <color name="Selected">fff707070</color>
+    <color name="Selected2">ff4A4A4A</color>
+    <color name="RadioFO">FF4A4A4A</color>
+    <color name="PanelFG">FF4A4A4A</color>
+    <color name="PanelFG-NF">9F707070</color>
+    <color name="Disabled">3F707070</color>    
+</colors>

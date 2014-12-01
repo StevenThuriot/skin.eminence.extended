@@ -139,7 +139,7 @@
                         <align>left</align>
                         <aligny>top</aligny>
                         <font>Font-Button</font>
-                        <label>573</label>
+                        <label>572</label>
                     </control>
                     <control type="label">
                         <width>600</width>
@@ -147,8 +147,7 @@
                         <align>left</align>
                         <aligny>top</aligny>
                         <font>Font-ListInfo</font>
-                        <label fallback="416">$INFO[Player.FileNameAndPath]</label>
-                        <scroll>true</scroll>
+                        <label fallback="416">$INFO[VideoPlayer.Studio]</label>
                     </control>
                     <control type="label">
                         <width>899</width>
@@ -308,7 +307,7 @@
                         <align>left</align>
                         <aligny>top</aligny>
                         <font>Font-Button</font>
-                        <label>573</label>
+                        <label>572</label>
                     </control>
                     <control type="label">
                         <width>600</width>
@@ -316,8 +315,7 @@
                         <align>left</align>
                         <aligny>top</aligny>
                         <font>Font-ListInfo</font>
-                        <label fallback="416">$INFO[Player.FileNameAndPath]</label>
-                        <scroll>true</scroll>
+                        <label fallback="416">$INFO[VideoPlayer.Studio]</label>
                     </control>
                     <control type="label">
                         <width>899</width>

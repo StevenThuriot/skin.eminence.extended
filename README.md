@@ -12,6 +12,7 @@ Weather font icons from meteocons
 # ![Extras](http://img.dafont.com/preview.php?text=Extras&ttf=squared_display0&ext=1&size=64&psize=m&y=53)
 
 * Skinned Trakt Rating Window
+* In the Information Dialog, Studio is shown instead of a scrolling `FileNameAndPath`.
 * Extra views
 	* Inverse Info List
 	* Inverse Media Info

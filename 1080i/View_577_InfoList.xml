@@ -28,7 +28,7 @@
             <visible>!Container.Content(movies) + !Container.Content(episodes) + !Container.Content(songs) + !Container.Content(seasons) + !Container.Content(tvshows)</visible>
         </control>
         <control type="label">
-            <posx>30r</posx>
+            <right>30</right>
             <width>900</width>
             <font>Font-ListInfo-Small</font>
             <align>right</align>
@@ -111,14 +111,14 @@
                         <posx>infolistx</posx>
                         <width>infolistw</width>
                         <height>345</height>
-                        <onleft>61</onleft>
+                        <onleft>60</onleft>
                         <onright>9000</onright>
                         <onup>577</onup>
                         <ondown>577</ondown>
                         <movement>2</movement>
                         <focusposition>2</focusposition>
                         <include>DefOnBack</include>
-                        <pagecontrol>61</pagecontrol>
+                        <pagecontrol>60</pagecontrol>
                         <viewtype label="131225">list</viewtype>
                         <scrolltime tween="quadratic">400</scrolltime>
 
@@ -178,7 +178,7 @@
                                         <visible>!Container.Content(movies) + !Container.Content(episodes) + !Container.Content(songs) + !Container.Content(seasons) + !Container.Content(tvshows)</visible>
                                     </control>
                                     <control type="label">
-                                        <posx>30r</posx>
+                                        <right>30</right>
                                         <width>900</width>
                                         <textcolor>Selected</textcolor>
                                         <font>Font-ListInfo-Small</font>

@@ -1,33 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <includes>
-
+    <variable name="DefOSDTagline">
+        <value condition="!IsEmpty(VideoPlayer.Tagline)">$INFO[VideoPlayer.Tagline]</value>
+        <value>$INFO[VideoPlayer.Genre]</value>
+    </variable>
     <include name="DefOSDInfoContent">
         <control type="label">
             <height>50</height>
             <left>0</left>
-            <right>32</right>
+            <right>550</right>
             <align>left</align>
-            <aligny>top</aligny>
-            <height>32</height>
+            <aligny>center</aligny>
             <font>Font-Button</font>
-            <visible>!VideoPlayer.Content(livetv)</visible>
-            <label>$INFO[VideoPlayer.Tagline]</label>
+            <label>$VAR[DefOSDTagline]</label>
         </control>
+    
         <control type="label">
             <height>50</height>
-            <left>0</left>
-            <right>32</right>
-            <align>left</align>
-            <aligny>top</aligny>
-            <height>32</height>
-            <font>Font-Button</font>
-            <label>$INFO[VideoPlayer.Genre]</label>
-            <visible>VideoPlayer.Content(livetv)</visible>
-            
+            <posy>-60</posy>
+            <left>500r</left>
+            <right>16</right>
+            <align>right</align>
+            <aligny>center</aligny>
+            <font>Font-ListInfo-Small</font>
+            <label>$INFO[VideoPlayer.AudioCodec,,  •  ]$VAR[AudioChannelsOSD,,  •  ]$INFO[VideoPlayer.VideoResolution,,  •  ]$INFO[VideoPlayer.VideoCodec,,  •  ]$INFO[VideoPlayer.VideoAspect]</label>
         </control>
+        
         <control type="textbox">
             <left>0</left>
-            <right>32</right>
+            <right>16</right>
             <align>justify</align>
             <aligny>top</aligny>
             <font>Font-ListInfo</font>
@@ -37,7 +38,7 @@
         </control>        
         <control type="label">
             <left>0</left>
-            <right>32</right>
+            <right>16</right>
             <align>left</align>
             <font>Font-ListInfo-Small</font>
             <visible>VideoPlayer.Content(livetv)</visible>
@@ -45,7 +46,7 @@
         </control>
         <control type="label">
             <left>0</left>
-            <right>32</right>
+            <right>16</right>
             <align>left</align>
             <font>Font-ListInfo-Small</font>
             <label>[B]$INFO[VideoPlayer.Premiered]$INFO[VideoPlayer.Year]$INFO[VideoPlayer.MPAA,  •  ,]$INFO[VideoPlayer.Studio,  •  ,]$INFO[VideoPlayer.Rating,  •  ,][/B]</label>

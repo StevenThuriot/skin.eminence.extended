@@ -25,9 +25,11 @@
         <control type="group" description="MusicVis">
             <posx>251</posx>
             <posy>280</posy>
+            <visible>Skin.HasSetting(osd.useclassicinfo)</visible>
             <animation effect="slide" start="0" end="0,-40" time="200" condition="Window.IsActive(videoosd) | Window.IsActive(musicosd)">Conditional</animation>
-            <visible>Window.IsVisible(visualisation) + [[[Window.IsVisible(musicosd) | Player.ShowInfo] + Skin.HasSetting(Vis.ExtraInfo)] | Window.IsVisible(script-XBMC_Lyrics-main.xml)]</visible>
-            <include>Animation.SlideOpen.LeftToRight</include>
+            <visible>Window.IsVisible(visualisation) + [[[Window.IsVisible(musicosd) | Player.ShowInfo] + Skin.HasSetting(Vis.ExtraInfo)] | Window.IsVisible(script-cu-lrclyrics-main.xml)]</visible>
+            <include>Animation.FadeIn.Up</include>
+            <include>Animation.FadeOut</include>
             <control type="image">
                 <width>1416</width>
                 <height>690</height>
@@ -73,7 +75,7 @@
                 <align>justify</align>
                 <font>Font-ListInfo</font>
                 <label>$VAR[MusicOSDPlot]</label>
-                <visible>!Window.IsVisible(script-XBMC_Lyrics-main.xml)</visible>
+                <visible>!Window.IsVisible(script-cu-lrclyrics-main.xml)</visible>
             </control>
             
             <control type="label">
@@ -87,7 +89,7 @@
         </control>
         
         <control type="group" description="Fullscreeninfo">
-            <visible>false</visible>
+            <visible>Skin.HasSetting(osd.useclassicinfo)</visible>
             <include>Animation.FadeIn.Up</include>
             <include>Animation.FadeOut</include>
             <visible>!IsEmpty(Window(seekbar).Property(fullscreeninfo)) + [Window.IsActive(videoosd) | Window.IsActive(DialogFullScreenInfo.xml)]</visible>
@@ -432,7 +434,8 @@
             <animation effect="fade" start="100" end="0" time="200">Hidden</animation>
             <posy>1080</posy>
             <animation effect="slide" start="0" end="0,-80" time="200" condition="Window.IsActive(videoosd) | Window.IsActive(musicosd)">Conditional</animation>
-            <animation effect="slide" end="0,-280" time="200" condition="!IsEmpty(Window(seekbar).Property(fullscreeninfo)) + [Window.IsActive(videoosd) | Window.IsActive(DialogFullScreenInfo.xml)]">Conditional</animation>
+            <animation effect="slide" end="0,-280" time="200" condition="!Skin.HasSetting(osd.useclassicinfo) + !IsEmpty(Window(seekbar).Property(fullscreeninfo)) + [Window.IsActive(videoosd) | Window.IsActive(DialogFullScreenInfo.xml)]">Conditional</animation>
+            <animation effect="slide" end="0,-280" time="200" condition="!Skin.HasSetting(osd.useclassicinfo) + Window.IsVisible(visualisation) + [[[Window.IsVisible(musicosd) | Player.ShowInfo] + Skin.HasSetting(Vis.ExtraInfo)] | Window.IsVisible(script-cu-lrclyrics-main.xml)]">Conditional</animation>
             <control type="image">
                 <width>1920</width>
                 <height>364</height>    
@@ -440,6 +443,7 @@
                 <animation effect="fade" end="90" condition="true">Conditional</animation>
             </control>
             <control type="group" description="InfoBottom">
+                <visible>!Skin.HasSetting(osd.useclassicinfo)</visible>
                 <visible>!IsEmpty(Window(seekbar).Property(fullscreeninfo)) + [Window.IsActive(videoosd) | Window.IsActive(DialogFullScreenInfo.xml)]</visible>
                 <include>Animation.DelayFadeIn</include>
                 <control type="group">
@@ -496,7 +500,29 @@
                 </control>
             </control>
             
-        
+            <control type="group" description="InfoBottomMusic">
+                <visible>!Skin.HasSetting(osd.useclassicinfo)</visible>
+                <include>Animation.DelayFadeIn</include>
+                <visible>Window.IsVisible(visualisation) + [[[Window.IsVisible(musicosd) | Player.ShowInfo] + Skin.HasSetting(Vis.ExtraInfo)] | Window.IsVisible(script-cu-lrclyrics-main.xml)]</visible>
+                <control type="image">
+                    <top>16</top>
+                    <left>16</left>
+                    <height>248</height>
+                    <width>248</width>
+                    <texture background="true" fallback="special://skin/extras/icons/film.png">$INFO[Player.Art(thumb)]</texture>
+                    <aspectratio aligny="center" align="center">scale</aspectratio>
+                    <visible>VideoPlayer.Content(livetv) | [IsEmpty(Player.Art(poster)) + IsEmpty(Player.Art(tvshow.poster))]</visible>
+                </control>
+                <control type="grouplist">
+                    <orientation>vertical</orientation>
+                    <usecontrolcoords>true</usecontrolcoords>
+                    <itemgap>10</itemgap>
+                    <top>16</top>
+                    <left>287</left>
+                    <include>DefOSDInfoContentMusic</include>
+                </control>
+            </control>
+            
             <control type="progress" id="23">
                 <description>Progress Bar</description>
                 <posy>-16</posy>

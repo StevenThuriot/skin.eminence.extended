@@ -23,7 +23,7 @@
             <align>right</align>
             <aligny>center</aligny>
             <font>Font-ListInfo-Small</font>
-            <label>$INFO[VideoPlayer.AudioCodec,,  •  ]$VAR[AudioChannelsOSD,,  •  ]$INFO[VideoPlayer.VideoResolution,,  •  ]$INFO[VideoPlayer.VideoCodec,,  •  ]$INFO[VideoPlayer.VideoAspect]</label>
+            <label>[UPPERCASE]$INFO[VideoPlayer.AudioCodec,,  •  ]$VAR[AudioChannelsOSD,,  •  ]$INFO[VideoPlayer.VideoResolution,,  •  ]$INFO[VideoPlayer.VideoCodec,,  •  ]$INFO[VideoPlayer.VideoAspect][/UPPERCASE]</label>
         </control>
         
         <control type="textbox">
@@ -51,6 +51,46 @@
             <font>Font-ListInfo-Small</font>
             <label>[B]$INFO[VideoPlayer.Premiered]$INFO[VideoPlayer.Year]$INFO[VideoPlayer.MPAA,  •  ,]$INFO[VideoPlayer.Studio,  •  ,]$INFO[VideoPlayer.Rating,  •  ,][/B]</label>
             <visible>!VideoPlayer.Content(livetv)</visible>
+        </control>
+    </include>
+    <include name="DefOSDInfoContentMusic">
+        <control type="label">
+            <height>50</height>
+            <left>0</left>
+            <right>550</right>
+            <align>left</align>
+            <aligny>center</aligny>
+            <font>Font-Button</font>
+            <label>$INFO[MusicPlayer.Album]$INFO[MusicPlayer.Year,  (,)]</label>
+        </control>
+    
+        <control type="label">
+            <height>50</height>
+            <posy>-60</posy>
+            <left>500r</left>
+            <right>16</right>
+            <align>right</align>
+            <aligny>center</aligny>
+            <font>Font-ListInfo-Small</font>
+            <label>[UPPERCASE]$INFO[VideoPlayer.AudioCodec,,  •  ]$VAR[AudioChannelsOSD][/UPPERCASE]</label>
+        </control>
+        
+        <control type="textbox">
+            <left>0</left>
+            <right>16</right>
+            <align>justify</align>
+            <aligny>top</aligny>
+            <font>Font-ListInfo</font>
+            <height>120</height>
+            <label>$VAR[MusicOSDPlot]</label>
+            <wrapmultiline>true</wrapmultiline>
+        </control>        
+        <control type="label">
+            <left>0</left>
+            <right>16</right>
+            <align>left</align>
+            <font>Font-ListInfo-Small</font>
+            <label>[B]$LOCALIZE[209]...  [/B]$INFO[MusicPlayer.offset(1).Title]</label>
         </control>
     </include>
     

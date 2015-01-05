@@ -16,6 +16,7 @@ Weather font icons from meteocons
 * Extra views
 	* Inverse Info List
 	* Inverse Media Info
+* Additional Backgrounds
 * Extra colors
 ![ghost](https://cloud.githubusercontent.com/assets/544444/4496170/a4aa63b0-4a62-11e4-970b-7ea80ac60a0a.jpg)
 ![intenseorange](https://cloud.githubusercontent.com/assets/544444/4496169/a4a85f84-4a62-11e4-8111-39bd7285fe47.jpg)

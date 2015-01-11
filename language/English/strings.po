@@ -763,3 +763,7 @@ msgstr ""
 msgctxt "#31286"
 msgid "Disable clock"
 msgstr ""
+
+msgctxt "#31287"
+msgid "Set startup video"
+msgstr ""

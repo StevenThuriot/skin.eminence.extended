@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<colors>
+    
+    <!-- System Colors -->
+    <color name="Black">FF000000</color>
+    <color name="Pink">FF8733e5</color>
+    <color name="Green">FF85b503</color>
+
+    <!-- Home Tile SolidColorBrushs -->
+    <color name="HomeCustom1">bF33b5e5</color>
+    <color name="HomeCustom2">bFb5e533</color>
+    <color name="HomeCustom3">bf8733e5</color>
+    <color name="HomeCustom4">bfe5b533</color>
+    <color name="HomeCustom5">bfb533e5</color>
+    <color name="HomeCustom6">bf33e5b5</color>
+    <color name="HomeCustom7">ff666666</color>
+    <color name="HomeCustom8">ff777777</color>
+
+    <!-- Home Header And Panels -->
+    <color name="MainLabel">FFb9b9b9</color>
+    <color name="SubLabel">BFb9b9b9</color>
+    <color name="MainLabel2">FF5f5f5f</color>
+    <color name="SubLabel2">BF5f5f5f</color>
+    <color name="OSD-NF">6Fb9b9b9</color>
+
+    <!-- Top Bar -->
+    <color name="TopBar">FFe8e8e8</color>
+    <color name="TopBarDark">6f5f5f5f</color>
+    <color name="TopBarDarkIcon">FFb9b9b9</color>
+    <color name="TopBarIcon">FF5f5f5f</color>
+
+    <!-- Highlight SolidColorBrushs -->
+    <color name="Highlight">ff4682B4</color>
+    <color name="PosterHighlight">df4682B4</color>
+
+    <!-- Keyboard -->
+    <color name="Keyboard">ff4682B4</color>
+    <color name="Keyboard-BG">FFc9c9c9</color>
+    <color name="Keyboard-Keys">9Ffffafa</color>
+
+    <!-- Main SolidColorBrushs -->
+    <color name="Background">CCffffff</color>
+    <color name="Selected">FF151515</color>
+    <color name="Selected2">FF2f2f2f</color>
+    <color name="PosterBorder">669f9f9f</color>
+    <color name="PosterBorder-NF">669f9f9f</color>
+    <color name="PanelBG">FFe8e8e8</color>
+    <color name="PanelBG2">FFe8e8e8</color>
+    <color name="RadioFO">FF000000</color>
+    <color name="PanelFG">FF1f1f1f</color>
+    <color name="PanelFG-NF">9F1f1f1f</color>
+    <color name="Disabled">3F1f1f1f</color>
+
+    <!-- Home Bar -->
+    <color name="HomeBarBG">669f9f9f</color>
+    <color name="HomeBarFG">FF000000</color>
+    <color name="HomeBarFG-NF">FF000000</color>
+    <color name="HomeBarSide">6f5f5f5f</color>
+    <color name="TileDefault">6f5f5f5f</color>
+</colors>

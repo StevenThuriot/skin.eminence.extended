@@ -22,3 +22,4 @@ Weather font icons from meteocons
 ![intenseorange](https://cloud.githubusercontent.com/assets/544444/4496169/a4a85f84-4a62-11e4-8111-39bd7285fe47.jpg)
 ![rose](https://cloud.githubusercontent.com/assets/544444/4496168/a4a4cfae-4a62-11e4-96b8-95170416d56b.jpg)
 ![steel](https://cloud.githubusercontent.com/assets/544444/4496167/a4a45e84-4a62-11e4-921a-cae2f14e7fb5.jpg)
+![whitesteel](https://cloud.githubusercontent.com/assets/544444/5782011/eaa71252-9db7-11e4-9f19-7143a09b061e.jpg)

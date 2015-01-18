@@ -297,7 +297,7 @@
                     <align>left</align>
                     <aligny>top</aligny>
                     <font>Font-Button</font>
-                    <label>573</label>
+                    <label>572</label>
                 </control>
                 <control type="label">
                     <width>600</width>
@@ -305,7 +305,7 @@
                     <align>left</align>
                     <aligny>top</aligny>
                     <font>Font-ListInfo</font>
-                    <label fallback="416">$INFO[ListItem.FileNameAndPath]</label>
+                    <label fallback="416">$INFO[ListItem.Studio]</label>
                     <scroll>true</scroll>
                 </control>
             </control>

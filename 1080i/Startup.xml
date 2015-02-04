@@ -109,7 +109,7 @@
             <onfocus>Skin.SetBool(home.314.enabled)</onfocus>
             <onfocus>Skin.SetString(home.314.bgcolor,ff752555)</onfocus>
             <onfocus>Skin.SetString(home.314.icon,special://skin/extras/icons/power.png)</onfocus>
-            <onfocus>Skin.SetString(home.314.path,ActivateWindow(shutdownmenu))</onfocus>
+            <onfocus>Skin.SetString(home.314.path,ShutDown())</onfocus>
             <onfocus>Skin.SetString(home.314.label,$LOCALIZE[33060])</onfocus>
             
             <!-- Other Item Colours -->

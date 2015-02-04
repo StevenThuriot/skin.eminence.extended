@@ -11,6 +11,8 @@ Weather font icons from meteocons
 
 # ![Extras](http://img.dafont.com/preview.php?text=Extras&ttf=squared_display0&ext=1&size=64&psize=m&y=53)
 
+* The Power Tile triggers the default Shutdown action defined in System Settings.
+	* The shutdown menu is still available through the `S` button.
 * Skinned Trakt Rating Window
 * In the Information Dialog, Studio is shown instead of a scrolling `FileNameAndPath`.
 * Extra views
